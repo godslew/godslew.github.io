@@ -8,8 +8,20 @@ interface SkillDetailPageProps {
   };
 }
 
+export function generateStaticParams() {
+  return allSkills.map((skill) => ({
+    slug: getSkillSlug(skill.name),
+  }));
+}
+
 export default function SkillDetailPage({ params }: SkillDetailPageProps) {
-  const skillName = params.slug
+  const slug = params?.slug;
+  
+  if (!slug) {
+    notFound();
+  }
+
+  const skillName = slug
     .split('-')
     .map(word => word.charAt(0).toUpperCase() + word.slice(1))
     .join(' ');
