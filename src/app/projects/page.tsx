@@ -34,13 +34,13 @@ export default function ProjectsPage() {
                     href={project.projectUrl}
                     className="text-sm text-white hover:underline"
                   >
-                    View Project →
+                    View Project
                   </a>
                   <a
                     href={project.githubUrl}
                     className="text-sm text-white hover:underline"
                   >
-                    GitHub →
+                    GitHub
                   </a>
                 </div>
               </div>

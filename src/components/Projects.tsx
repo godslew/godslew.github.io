@@ -27,13 +27,13 @@ export default function Projects() {
                 href={project.projectUrl}
                 className="text-sm text-white hover:underline"
               >
-                View Project →
+                View Project
               </a>
               <a
                 href={project.githubUrl}
                 className="text-sm text-white hover:underline"
               >
-                GitHub →
+                GitHub
               </a>
             </div>
           </div>
@@ -45,7 +45,7 @@ export default function Projects() {
             href="/projects"
             className="inline-block px-6 py-3 rounded-full border border-white/20 text-white font-medium hover:bg-white/10 transition-colors"
           >
-            View All Projects →
+            View All Projects
           </Link>
         </div>
       )}

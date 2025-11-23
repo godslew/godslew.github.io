@@ -51,7 +51,7 @@ export default function Experience() {
             href="/experience"
             className="inline-block px-6 py-3 rounded-full border border-white/20 text-white font-medium hover:bg-white/10 transition-colors"
           >
-            View All Experience →
+            View All Experience
           </Link>
         </div>
       )}
